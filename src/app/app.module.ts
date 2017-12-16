@@ -5,12 +5,14 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
+import { InputNumbersOnlyDirective } from './input-numbers-only.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponentComponent
+    LoginComponentComponent,
+    InputNumbersOnlyDirective
   ],
   imports: [
     BrowserModule,
