@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css';
+@import '~https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/font-awesome/css/font-awesome.min.css';
+
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
