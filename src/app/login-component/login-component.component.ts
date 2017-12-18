@@ -12,4 +12,11 @@ export class LoginComponentComponent implements OnInit {
   ngOnInit() {
   }
 
+  butSubmit(event)
+  {
+    console.log(event);
+    document.getElementById("stage1").style.display = "none";
+    document.getElementById("stage2").style.display = "block";
+  }
+
 }

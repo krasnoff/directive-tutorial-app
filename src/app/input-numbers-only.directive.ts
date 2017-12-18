@@ -9,7 +9,7 @@ export class InputNumbersOnlyDirective {
 
   @HostListener('keydown', ['$event'])
   confirmFirst(event: KeyboardEvent) {
-    if (!isNaN(Number(event.key))) {
+    if (!isNaN(Number(event.key)) || event.keyCode == 9) {
       return true;
     }
     else {
