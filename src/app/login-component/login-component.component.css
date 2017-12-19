@@ -29,3 +29,18 @@ input[type="text"], input[type="password"]
 {
     display: none;
 }
+
+.subframework
+{
+    width: 100%;
+    display: table;
+    margin-bottom: 5px;
+}
+
+.dot
+{
+    width: 10px;
+    float: right;
+    background-color: black;
+    margin-left: 9px;
+}
