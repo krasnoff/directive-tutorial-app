@@ -1,12 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
 import { InputNumbersOnlyDirective } from './input-numbers-only.directive';
-import { ProgressBarDirective } from './progress-bar.directive';
+import { IsAdminDirective } from './is-admin.directive';
+
 
 
 @NgModule({
@@ -14,11 +16,12 @@ import { ProgressBarDirective } from './progress-bar.directive';
     AppComponent,
     LoginComponentComponent,
     InputNumbersOnlyDirective,
-    ProgressBarDirective
+    IsAdminDirective
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,13 +1,13 @@
 <div class="Framework">
   <div class="stage1" id="stage1">
-    <input type="text" id="txtIDNum" placeholder="מספר ת.ז" maxlength="9" appInputNumbersOnly>
+    <input type="text" id="txtIDNum" placeholder="מספר ת.ז" maxlength="9" appInputNumbersOnly [(ngModel)]="txtIDNum">
     <input type="password" id="txtPassword" placeholder="סיסמה" maxlength="15">
     <input type="button" id="butLogin" value="שלח" class="btn btn-primary" (click)="butSubmit($event)">
   </div>
   <div class="stage2" id="stage2">
     <div class="subframework">
-      <div class="dot" *appProgressBar="9">&nbsp;</div>
+      <div class="dot" *appIsAdmin="txtIDNum">שלום מנהל מערכת</div>
     </div>
-    <div class="subframework">Hello</div>
+    <div class="subframework">מספר זהות: {{txtIDNum}}</div>
   </div>
 </div>
